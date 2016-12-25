@@ -27,6 +27,7 @@
 		6B6202181E0F316200A7B2B0 /* docker-time-sync */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "docker-time-sync"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B62021B1E0F316200A7B2B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6B6202231E0F31B800A7B2B0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6B7DB3531E10538100CB0A5F /* update-docker-time */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "update-docker-time"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				6B62021B1E0F316200A7B2B0 /* main.m */,
+				6B7DB3531E10538100CB0A5F /* update-docker-time */,
 			);
 			path = "docker-time-sync";
 			sourceTree = "<group>";
@@ -229,6 +231,7 @@
 		6B6202201E0F316200A7B2B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				DEVELOPMENT_TEAM = 4N5S9KH6Q8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -237,6 +240,7 @@
 		6B6202211E0F316200A7B2B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				DEVELOPMENT_TEAM = 4N5S9KH6Q8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -261,6 +265,7 @@
 				6B6202211E0F316200A7B2B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

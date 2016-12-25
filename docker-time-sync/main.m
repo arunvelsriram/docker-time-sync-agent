@@ -28,19 +28,13 @@ void SleepCallBack( void * refCon, io_service_t service, natural_t messageType, 
            (long unsigned int)messageArgument );
     
     if (messageType == kIOMessageSystemHasPoweredOn) {
-        NSLog(@"Started to sync time...");
-        // docker run --rm -it --privileged --pid=host walkerlee/nsenter -t 1 -m -u -i -n ntpd -d -q -n -p pool.ntp.org
+        NSLog(@"Run: /usr/local/bin/update-docker-time");
         NSTask *task = [[NSTask alloc] init];
-        NSArray *arguments = [NSArray arrayWithObjects:@"run", @"--rm", @"-it", @"--privileged", @"--pid=host", @"walkerlee/nsenter", [NSString stringWithFormat: @"%@ %@",@"-t",@"1"], @"-m", @"-u", @"-i", @"-n", @"ntpd", @"-d", @"-q", @"-n", @"-p", @"pool.ntp.org", nil];
-        [task setLaunchPath: @"/usr/local/bin/docker"];
-        [task setArguments: arguments];
-        task.terminationHandler = ^(NSTask *aTask){
-            NSLog(@"\nDone!\n");
-        };
+        [task setLaunchPath:@"/usr/local/bin/update-docker-time"];
+        [task setArguments:@[]];
         [task launch];
     }
 }
-
 
 int main( int argc, char **argv )
 {

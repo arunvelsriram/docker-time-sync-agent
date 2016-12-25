@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#  docker-sync-time.sh
+#  docker-sync-time
+#
+#  Created by ArunvelSriram on 26/12/16.
+#  Copyright © 2016 ArunvelSriram. All rights reserved.
+
+/usr/local/bin/docker run --rm --privileged --pid=host walkerlee/nsenter -t 1 -m -u -i -n ntpd -d -q -n -p pool.ntp.org
