@@ -24,7 +24,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6B6202181E0F316200A7B2B0 /* docker-time-sync */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "docker-time-sync"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B6202181E0F316200A7B2B0 /* docker-time-sync-agent */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "docker-time-sync-agent"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B62021B1E0F316200A7B2B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6B6202231E0F31B800A7B2B0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6B7DB3531E10538100CB0A5F /* update-docker-time */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "update-docker-time"; sourceTree = "<group>"; };
@@ -45,7 +45,7 @@
 		6B62020F1E0F316200A7B2B0 = {
 			isa = PBXGroup;
 			children = (
-				6B62021A1E0F316200A7B2B0 /* docker-time-sync */,
+				6B62021A1E0F316200A7B2B0 /* docker-time-sync-agent */,
 				6B6202191E0F316200A7B2B0 /* Products */,
 				6B6202221E0F31B800A7B2B0 /* Frameworks */,
 			);
@@ -54,18 +54,18 @@
 		6B6202191E0F316200A7B2B0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6B6202181E0F316200A7B2B0 /* docker-time-sync */,
+				6B6202181E0F316200A7B2B0 /* docker-time-sync-agent */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6B62021A1E0F316200A7B2B0 /* docker-time-sync */ = {
+		6B62021A1E0F316200A7B2B0 /* docker-time-sync-agent */ = {
 			isa = PBXGroup;
 			children = (
 				6B62021B1E0F316200A7B2B0 /* main.m */,
 				6B7DB3531E10538100CB0A5F /* update-docker-time */,
 			);
-			path = "docker-time-sync";
+			path = "docker-time-sync-agent";
 			sourceTree = "<group>";
 		};
 		6B6202221E0F31B800A7B2B0 /* Frameworks */ = {
@@ -79,9 +79,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6B6202171E0F316200A7B2B0 /* docker-time-sync */ = {
+		6B6202171E0F316200A7B2B0 /* docker-time-sync-agent */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6B62021F1E0F316200A7B2B0 /* Build configuration list for PBXNativeTarget "docker-time-sync" */;
+			buildConfigurationList = 6B62021F1E0F316200A7B2B0 /* Build configuration list for PBXNativeTarget "docker-time-sync-agent" */;
 			buildPhases = (
 				6B6202141E0F316200A7B2B0 /* Sources */,
 				6B6202151E0F316200A7B2B0 /* Frameworks */,
@@ -91,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = "docker-time-sync";
+			name = "docker-time-sync-agent";
 			productName = "docker-time-sync";
-			productReference = 6B6202181E0F316200A7B2B0 /* docker-time-sync */;
+			productReference = 6B6202181E0F316200A7B2B0 /* docker-time-sync-agent */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -112,7 +112,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6B6202131E0F316200A7B2B0 /* Build configuration list for PBXProject "docker-time-sync" */;
+			buildConfigurationList = 6B6202131E0F316200A7B2B0 /* Build configuration list for PBXProject "docker-time-sync-agent" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -124,7 +124,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6B6202171E0F316200A7B2B0 /* docker-time-sync */,
+				6B6202171E0F316200A7B2B0 /* docker-time-sync-agent */,
 			);
 		};
 /* End PBXProject section */
@@ -249,7 +249,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6B6202131E0F316200A7B2B0 /* Build configuration list for PBXProject "docker-time-sync" */ = {
+		6B6202131E0F316200A7B2B0 /* Build configuration list for PBXProject "docker-time-sync-agent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6B62021D1E0F316200A7B2B0 /* Debug */,
@@ -258,7 +258,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6B62021F1E0F316200A7B2B0 /* Build configuration list for PBXNativeTarget "docker-time-sync" */ = {
+		6B62021F1E0F316200A7B2B0 /* Build configuration list for PBXNativeTarget "docker-time-sync-agent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6B6202201E0F316200A7B2B0 /* Debug */,
