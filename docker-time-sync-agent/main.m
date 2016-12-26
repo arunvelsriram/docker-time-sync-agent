@@ -20,6 +20,8 @@
 #include <Foundation/NSTask.h>
 #include <Foundation/NSString.h>
 #include <Foundation/NSArray.h>
+#include <Foundation/NSURL.h>
+#include <Foundation/NSData.h>
 
 void SleepCallBack( void * refCon, io_service_t service, natural_t messageType, void * messageArgument )
 {
@@ -28,11 +30,20 @@ void SleepCallBack( void * refCon, io_service_t service, natural_t messageType, 
            (long unsigned int)messageArgument );
     
     if (messageType == kIOMessageSystemHasPoweredOn) {
-        NSLog(@"Run: /usr/local/bin/update-docker-time");
-        NSTask *task = [[NSTask alloc] init];
-        [task setLaunchPath:@"/usr/local/bin/update-docker-time"];
-        [task setArguments:@[]];
-        [task launch];
+        NSLog(@"Waiting 30s to ensure network connectivity...");
+        sleep(30);
+        NSURL *scriptUrl = [NSURL URLWithString:@"https://www.google.com"];
+        NSData *data = [NSData dataWithContentsOfURL:scriptUrl];
+        if (data) {
+            NSLog(@"Run: /usr/local/bin/update-docker-time");
+            NSTask *task = [[NSTask alloc] init];
+            [task setLaunchPath:@"/usr/local/bin/update-docker-time"];
+            [task setArguments:@[]];
+            [task launch];
+        }
+        else {
+            NSLog(@"System is not connected to the Internet");
+        }
     }
 }
 
