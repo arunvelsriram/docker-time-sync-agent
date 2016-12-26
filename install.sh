@@ -17,7 +17,7 @@ echo Setting up Launch Agent...
 curl -O https://raw.githubusercontent.com/arunvelsriram/docker-time-sync-agent/master/$plist_filename
 sed -i .backup "s/YOUR_USERNAME/$username/g" $plist_filename
 cp $plist_filename ~/Library/LaunchAgents
-launchctl unload ~/Library/LaunchAgents/$plist_filename
+launchctl unload ~/Library/LaunchAgents/$plist_filename 2>/dev/null
 launchctl load ~/Library/LaunchAgents/$plist_filename
 popd
 
