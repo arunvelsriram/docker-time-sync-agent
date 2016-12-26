@@ -17,7 +17,7 @@ Using `launchd`, `docker-time-sync-agent` can be made to autostart during login 
 
 ### Auto
 
-**WIP**
+`curl https://raw.githubusercontent.com/arunvelsriram/docker-time-sync-agent/master/install.sh | bash`
 
 ### Manual
 1. Download the latest binaries from releases page
