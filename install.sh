@@ -1,6 +1,6 @@
 #!/bin/bash
 
-tag=$(git tag | xargs | awk '{print $1}')
+tag="v1.0.0"
 username=$(id -u -n)
 plist_filename="io.github.arunvelsriram.docker-time-sync-agent.plist"
 
