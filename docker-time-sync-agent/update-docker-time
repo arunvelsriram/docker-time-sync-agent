@@ -6,4 +6,4 @@
 #  Created by ArunvelSriram on 26/12/16.
 #  Copyright © 2016 ArunvelSriram. All rights reserved.
 
-/usr/local/bin/docker run --rm --privileged --pid=host walkerlee/nsenter -t 1 -m -u -i -n ntpd -d -q -n -p `cat /etc/ntp.conf | awk '{ print $2 }'`
+/usr/local/bin/docker run --rm --privileged --pid=host walkerlee/nsenter -t 1 -m -u -i -n ntpd -d -q -n -p `if [[ -f /etc/ntp.conf ]]; then cat /etc/ntp.conf | awk '{ print $2 }'; else echo 'pool.ntp.org'; fi`
