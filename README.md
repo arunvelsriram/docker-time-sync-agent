@@ -26,7 +26,7 @@ Using `launchd`, `docker-time-sync-agent` can be made to autostart during login 
 4. `mv /Binaries-Vx.y.z/update-docker-time /usr/local/bin/`
 5. Download this file [io.github.arunvelsriram.docker-time-sync-agent.plist](io.github.arunvelsriram.docker-time-sync-agent.plist)
 6. Open it and replace 'YOUR_USERNAME' with your Mac's username
-7. `mv /path/to/io.github.arunvelsriram.docker-time-sync-agent.plist` `~/Library/LaunchAgents/`
+7. `mv /path/to/io.github.arunvelsriram.docker-time-sync-agent.plist ~/Library/LaunchAgents/`
 8. `launchctl load ~/Library/LaunchAgents/io.github.arunvelsriram.docker-time-sync-agent.plist`
 9. Use `Console.app` and `~/.docker-time-sync-agent.log` file to see the logs
 10. Put the computer in sleep mode and wake it up. After 30s from wakeup, time sync will happen
