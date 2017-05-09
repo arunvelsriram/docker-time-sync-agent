@@ -31,6 +31,19 @@ Using `launchd`, `docker-time-sync-agent` can be made to autostart during login 
 9. Use `Console.app` and `~/.docker-time-sync-agent.log` file to see the logs
 10. Put the computer in sleep mode and wake it up. After 30s from wakeup, time sync will happen
 
+## Uninstallation
+
+### Manual
+1. Run the following commands from your terminal:
+    
+    ```
+    launchctl unload ~/Library/LaunchAgents/io.github.arunvelsriram.docker-time-sync-agent.plist
+    rm -f ~/Library/LaunchAgents/io.github.arunvelsriram.docker-time-sync-agent.plist
+    rm -f /usr/local/bin/docker-time-sync-agent
+    rm -f /usr/local/bin/update-docker-time
+    rm -f ~/.docker-time-sync-agent.log
+    ```
+
 ## Contributing
 **Contributions are welcome**  
 This is a Xcode Command Line Tool project. Clone the repo and open `docker-time-sync-agent.xcodeproj` in Xcode.   
