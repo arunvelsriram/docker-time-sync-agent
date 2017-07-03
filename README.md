@@ -1,3 +1,5 @@
+**Note:** Time drift issue is fixed in latest version of Docker for Mac. Please check [https://github.com/docker/for-mac/issues/17](https://github.com/docker/for-mac/issues/17).
+
 # docker-time-sync-agent
 `docker-time-sync-agent` is a tool to prevent time drift in Docker for Mac's HyperKit VM.
 
