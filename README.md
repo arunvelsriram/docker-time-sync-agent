@@ -47,5 +47,4 @@ Using `launchd`, `docker-time-sync-agent` can be made to autostart during login 
     ```
 
 ## Contributing
-**Contributions are welcome**  
-This is a Xcode Command Line Tool project. Clone the repo and open `docker-time-sync-agent.xcodeproj` in Xcode.   
+See [CONTRIBUTING.md](CONTRIBUTING.md)
